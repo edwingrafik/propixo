@@ -1,0 +1,27 @@
+.button {
+  @apply border-none;
+  @apply text-3xl;
+  @apply relative;
+  @apply rounded-full;
+}
+
+.button::before {
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: '';
+  width: 2rem;
+  @apply h-full;
+  @apply absolute;
+  @apply top-0;
+  @apply left-0;
+  @apply rounded-full;
+  background: #00F0B5;
+}
+
+.button:hover::before {
+  width: 8rem;
+}
+
+.button-text {
+  color: #00F0B5;
+  mix-blend-mode: difference;
+}
