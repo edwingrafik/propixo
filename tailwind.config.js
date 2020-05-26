@@ -39,13 +39,13 @@ module.exports = {
       },
       fontSize: {
         label: ['0.875', '1rem'],
-        small: ['0.75rem', '1rem'],
-        base: ['1rem', '1.5rem'], // font-size: 16px, line-height: 24px
-        button: ['1rem', '1rem'],
-        h4: ['1.375rem', '1.75rem'],
-        h3: ['1.5rem', '2.125rem'],
-        h2: ['2.5rem', '2.75rem'],
-        h1: ['4rem', '3.875rem'],
+        small: ['0.875rem', '1.25rem'],
+        base: ['1.125rem', '1.5rem'], // font-size: 18px, line-height: 24px
+        button: ['1rem', '1rem'], // font-size: 16px, line-height: 16px
+        h4: ['1.375rem', '1.625rem'], // font-size: 22px, line-height: 26px
+        h3: ['1.5rem', '1.75rem'], // font-size: 24px, line-height: 28px
+        h2: ['2.5rem', '2.75rem'], // font-size: 40px, line-height: 44px
+        h1: ['4rem', '4.25rem'], // font-size: 64px, line-height: 68px
       },
       spacing: {
         '8': '0.5rem', // 8px

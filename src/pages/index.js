@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => (
       <div key={work.id}>
         <Img fluid={work.coverImage.fluid} />
         <Link className='button' to={`/works/${work.slug}`}>
-          <span class='button-text'>{work.title}</span>
+          <span className='button-text'>{work.title}</span>
         </Link>
         <p>{work.excerpt}</p>
       </div>
