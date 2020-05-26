@@ -16,42 +16,42 @@ const About = ({ data: { about } }) => (
       <div className='bg-red-400 w-104 h-104'></div>
       <div className='bg-red-300 w-168 h-168'></div>
       <div className='bg-red-200 w-272 h-272'></div>
-      <div className="text-h1">
+      <div className="h1-text">
         Header 1<br />
         Eos placeat id impedit sint eum cumque nam in. Numquam quos quos autem
         rerum ipsa voluptatem. Dolor reiciendis sit. Consequatur qui
         perspiciatis non enim blanditiis. Autem recusandae ipsum sit vero.
         Tempore ipsum unde illo est rerum minima modi ea sunt.
       </div>
-      <div className="text-h2">
+      <div className="h2-text">
         Header 2<br />
         Eos placeat id impedit sint eum cumque nam in. Numquam quos quos autem
         rerum ipsa voluptatem. Dolor reiciendis sit. Consequatur qui
         perspiciatis non enim blanditiis. Autem recusandae ipsum sit vero.
         Tempore ipsum unde illo est rerum minima modi ea sunt.
       </div>
-      <div className="text-h3">
+      <div className="h3-text">
         Header 3<br />
         Eos placeat id impedit sint eum cumque nam in. Numquam quos quos autem
         rerum ipsa voluptatem. Dolor reiciendis sit. Consequatur qui
         perspiciatis non enim blanditiis. Autem recusandae ipsum sit vero.
         Tempore ipsum unde illo est rerum minima modi ea sunt.
       </div>
-      <div className="text-h4">
+      <div className="h4-text">
         Header 4<br />
         Eos placeat id impedit sint eum cumque nam in. Numquam quos quos autem
         rerum ipsa voluptatem. Dolor reiciendis sit. Consequatur qui
         perspiciatis non enim blanditiis. Autem recusandae ipsum sit vero.
         Tempore ipsum unde illo est rerum minima modi ea sunt.
       </div>
-      <div className="text-base">
+      <div className="body-text">
         Text base<br />
         Eos placeat id impedit sint eum cumque nam in. Numquam quos quos autem
         rerum ipsa voluptatem. Dolor reiciendis sit. Consequatur qui
         perspiciatis non enim blanditiis. Autem recusandae ipsum sit vero.
         Tempore ipsum unde illo est rerum minima modi ea sunt.
       </div>
-      <div className="text-small">
+      <div className="small-text">
         Text small<br />
         Eos placeat id impedit sint eum cumque nam in. Numquam quos quos autem
         rerum ipsa voluptatem. Dolor reiciendis sit. Consequatur qui

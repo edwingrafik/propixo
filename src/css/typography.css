@@ -24,3 +24,45 @@
        url('/fonts/raleway-v14-latin-ext_latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
        url('/fonts/raleway-v14-latin-ext_latin-800.svg#Raleway') format('svg'); /* Legacy iOS */
 }
+
+.h1-text {
+    @apply text-h1;
+    @apply font-sans;
+    @apply font-bold;
+    @apply tracking-tighter;
+}
+
+.h2-text {
+    @apply text-h2;
+    @apply font-sans;
+    @apply font-normal;
+    @apply tracking-tight;
+}
+
+.h3-text {
+    @apply text-h3;
+    @apply font-sans;
+    @apply font-normal;
+    @apply tracking-normal;
+}
+
+.h4-text {
+    @apply text-h4;
+    @apply font-sans;
+    @apply font-bold;
+    @apply tracking-wide;
+}
+
+.body-text {
+    @apply text-base;
+    @apply font-sans;
+    @apply font-normal;
+    @apply tracking-wide;
+}
+
+.small-text {
+    @apply text-small;
+    @apply font-sans;
+    @apply font-normal;
+    @apply tracking-normal;
+}
