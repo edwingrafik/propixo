@@ -12,7 +12,7 @@
 
 @import "tailwindcss/base";
 
-/* @import './typography.css'; */
+@import './typography.css';
 
 /**
  * This injects any component classes registered by plugins.

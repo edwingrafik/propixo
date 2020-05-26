@@ -1,7 +1,12 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   purge: [],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Raleway', ...defaultTheme.fontFamily.sans],
+      },
       fontSize: {
         label: ['0.875', '1rem'],
         small: ['0.75rem', '1rem'],
@@ -24,19 +29,19 @@ module.exports = {
       },
     },
     screens: {
-      'sm': '768px',    // @media (min-width: 768px)
-      'md': '1024px',   // @media (min-width: 1024px)
-      'lg': '1440px',   // @media (min-width: 1440px)
-      'xl': '1920px',   // @media (min-width: 1920px)
+      sm: '768px', // @media (min-width: 768px)
+      md: '1024px', // @media (min-width: 1024px)
+      lg: '1440px', // @media (min-width: 1440px)
+      xl: '1920px', // @media (min-width: 1920px)
     },
     container: {
       center: true,
       padding: {
-        default: '1.5rem',  // 24px
-        sm: '2.5rem',       // 40px
-        md: '4rem',         // 64px
-        lg: '10.5rem',      // 168px
-        xl: '17rem',        //272px
+        default: '1.5rem', // 24px
+        sm: '2.5rem', // 40px
+        md: '4rem', // 64px
+        lg: '10.5rem', // 168px
+        xl: '17rem', //272px
       },
     },
   },
