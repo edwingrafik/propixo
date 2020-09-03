@@ -6,24 +6,23 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          lighter: '#b3bcf5',
-          default: '#5c6ac4',
-          darker: '#202e78',
+          lighter: 'var(--primary-l)',
+          default: 'var(--primary)',
+          darker: 'var(--primary-d)',
         },
         secondary: {
-          lighter: '#71F4BD',
-          default: '#42F0A7',
-          darker: '#0BDA95',
+          lighter: 'var(--secondary-l)',
+          default: 'var(--secondary)',
+          darker: 'var(--secondary-d)',
         },
         bg: {
-          lighter: '#FAFAFA',
-          default: '#F5F5F5',
-          darker: '#F0F0F0',
+          lighter: 'var(--bg-0)',
+          default: 'var(--bg-1)',
+          darker: 'var(--bg-2)',
         },
         text: {
-          lighter: '#8592AD',
-          default: '#3D475C',
-          darker: '#101119',
+          lighter: 'var(--text-l)',
+          default: 'var(--text)',
         },
       },
       letterSpacing: {
@@ -34,28 +33,32 @@ module.exports = {
         wider: '.03em',
         widest: '.04em',
       },
-      fontFamily: {
-        sans: ['Raleway', ...defaultTheme.fontFamily.sans],
-      },
       fontSize: {
-        label: ['0.875', '1rem'],
-        small: ['0.875rem', '1.25rem'],
-        base: ['1.125rem', '1.5rem'], // font-size: 18px, line-height: 24px
-        button: ['1rem', '1rem'], // font-size: 16px, line-height: 16px
-        h4: ['1.375rem', '1.625rem'], // font-size: 22px, line-height: 26px
-        h3: ['1.5rem', '1.75rem'], // font-size: 24px, line-height: 28px
-        h2: ['2.5rem', '2.75rem'], // font-size: 40px, line-height: 44px
-        h1: ['4rem', '4.25rem'], // font-size: 64px, line-height: 68px
+        small: '0.875rem',
+        base: '1.125rem',
+        h3: 'var(--space-26)',
+        h2: 'var(--space-42)',
+        h1: 'var(--space-68)',
+      },
+      lineHeight: {
+        small: '1.25rem',
+        base: 'var(--space-26)',
+        h3: 'var(--space-42)',
+        h2: '3.125rem',
+        h1: '4.75rem',
+      },
+      fontFamily: {
+        sans: ['Proxima Nova', ...defaultTheme.fontFamily.sans],
       },
       spacing: {
-        '8': '0.5rem', // 8px
-        '16': '1rem', // 16px
-        '24': '1.5rem', // 24px
-        '40': '2.5rem', // 40px
-        '64': '4rem', // 64px
-        '104': '6.5rem', // 104px
-        '168': '10.5rem', // 168px
-        '272': '17rem', // 272px
+        '10': 'var(--space-10)',
+        '16': 'var(--space-16)',
+        '26': 'var(--space-26)',
+        '42': 'var(--space-42)',
+        '68': 'var(--space-68)',
+        '110': 'var(--space-110)',
+        '178': 'var(--space-178)',
+        '288': 'var(--space-288)',
       },
     },
     screens: {
@@ -64,16 +67,9 @@ module.exports = {
       lg: '1440px', // @media (min-width: 1440px)
       xl: '1920px', // @media (min-width: 1920px)
     },
-    container: {
-      center: true,
-      padding: {
-        default: '1.5rem', // 24px
-        sm: '2.5rem', // 40px
-        md: '4rem', // 64px
-        lg: '10.5rem', // 168px
-        xl: '17rem', //272px
-      },
-    },
+  },
+  corePlugins: {
+    container: false,
   },
   variants: {},
   plugins: [],

@@ -11,7 +11,7 @@
 */
 
 @import "tailwindcss/base";
-
+@import "./variables.css";
 @import './typography.css';
 
 /**
@@ -24,7 +24,7 @@
 
 @import "tailwindcss/components";
 
-@import './buttons.css';
+/* @import './buttons.css'; */
 
 /**
  * Here you would add any of your custom component classes; stuff that you'd
@@ -67,5 +67,3 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
-
-@import "./custom.css";

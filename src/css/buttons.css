@@ -1,6 +1,6 @@
 .button {
   @apply border-none;
-  @apply text-button;
+  /* @apply text-button; */
   @apply relative;
   @apply rounded-full;
 }

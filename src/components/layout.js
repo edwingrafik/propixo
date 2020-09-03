@@ -46,36 +46,38 @@ const TemplateWrapper = ({ children }) => {
             favicon={data.datoCmsSite.faviconMetaTags}
             seo={data.datoCmsHome.seoMetaTags}
           />
-          <header>
-            <Link to='/'>{data.datoCmsSite.globalSeo.siteName}</Link>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html,
-              }}
-            />
-            <ul>
+          <header className='container'>
+            {/* <Link to='/' title={data.datoCmsSite.globalSeo.siteName}>
+              <div className='w-40 h-40 bg-text-darker shadow-lg rounded-full mt-24'></div>
+            </Link> */}
+            {/* <ul>
               <li>
                 <Link to='/'>Home</Link>
               </li>
               <li>
                 <Link to='/about'>About</Link>
               </li>
-            </ul>
-            <p>
-              {data.allDatoCmsSocialProfile.edges.map(({ node: profile }) => (
-                <a
-                  key={profile.profileType}
-                  href={profile.url}
-                  target='blank'
-                  className={`social social--${profile.profileType.toLowerCase()}`}
-                >
-                  {' '}
-                </a>
-              ))}
-            </p>
+            </ul> */}
+            {/* {data.allDatoCmsSocialProfile.edges.map(({ node: profile }) => (
+              <a
+                key={profile.profileType}
+                href={profile.url}
+                target='blank'
+                className={`social social--${profile.profileType.toLowerCase()}`}
+              >
+                {' '}
+              </a>
+            ))} */}
           </header>
           <main>{children}</main>
-          <footer>{data.datoCmsHome.copyright}</footer>
+          {/* <footer className='container'>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html,
+              }}
+            />
+            {data.datoCmsHome.copyright}
+          </footer> */}
         </div>
       )}
     />
