@@ -41,7 +41,7 @@ const TemplateWrapper = ({ children }) => {
         }
       `}
       render={(data) => (
-        <div className='min-h-screen flex flex-col justify-between'>
+        <div className='min-h-screen flex flex-col justify-between items-center'>
           <HelmetDatoCms
             favicon={data.datoCmsSite.faviconMetaTags}
             seo={data.datoCmsHome.seoMetaTags}

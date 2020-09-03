@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby';
 // import Masonry from 'react-masonry-component'
 import Img from 'gatsby-image';
 import Layout from '../components/layout';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -40,7 +41,10 @@ const IndexPage = ({ data }) => (
           name='contact'
           method='POST'
           data-netlify='true'
+          data-netlify-recaptcha='true'
+          action='/thank-you'
         >
+          <input type='hidden' name='contact' value='Contact Form' />
           <div className='mb-4'>
             <label
               className='block text-gray-700 text-sm font-bold mb-2'
@@ -57,6 +61,7 @@ const IndexPage = ({ data }) => (
             />
           </div>
           <div className='flex items-center justify-between'>
+            {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}
             <button
               className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
               type='submit'
